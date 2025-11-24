@@ -9,7 +9,7 @@ const container = document.querySelector(".container");
 
 // Add event listener for Iced Coffee
 icedBtn.addEventListener("click", () => {
-    fetch("data/iced.json")
+    fetch("iced.json")
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -19,7 +19,7 @@ icedBtn.addEventListener("click", () => {
 
 // Add event listener for Hot Coffee
 hotBtn.addEventListener("click", () => {
-    fetch("data/hot.json")
+    fetch("hot.json")
         .then(response => response.json())
         .then(data => {
             console.log(data);
